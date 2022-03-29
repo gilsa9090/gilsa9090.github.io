@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@200&display=swap" rel="stylesheet" />
+    <title>Calculator Javascript</title>
+  </head>
+  <body>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+    </div>
+    <div class="container">
+      <input type="text" name="answer" id="output" />
+      <button onclick="Clear()">AC</button>
+      <button onclick="Del()">DEL</button>
+      <button onclick="display('%')">%</button>
+      <button onclick="display('/')">/</button>
+      <button onclick="display('7')">7</button>
+      <button onclick="display('8')">8</button>
+      <button onclick="display('9')">9</button>
+      <button onclick="display('*')">*</button>
+      <button onclick="display('4')">4</button>
+      <button onclick="display('5')">5</button>
+      <button onclick="display('6')">6</button>
+      <button onclick="display('-')">-</button>
+      <button onclick="display('1')">1</button>
+      <button onclick="display('2')">2</button>
+      <button onclick="display('3')">3</button>
+      <button onclick="display('+')">+</button>
+      <button onclick="display('.')">.</button>
+      <button onclick="display('0')">0</button>
+      <button onclick="Calculate()">=</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
