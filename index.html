@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@200&display=swap" rel="stylesheet" />
-    <title>Calculator Javascript</title>
-  </head>
-  <body>
-    <div class="bubbles">
-      <span class="one"></span>
-      <span class="two"></span>
-      <span class="three"></span>
-      <span class="four"></span>
-      <span class="five"></span>
-      <span class="six"></span>
-      <span class="seven"></span>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container3 {
+    background-image: url("3.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+}
+
+.container3 h1 {
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container" id="home">
+        <!--NAVBAR-->
+        <div class="navbar">
+            <img src="logo.png" style="cursor: pointer;" width="150" height="80" alt="">
+            <nav>
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#content"><li>Offers</li></a>
+                    <a href="#contact"><li>Contact Us</li></a>
+                </ul>
+            </nav>
+        </div>
+        <!--Content-->
+        <div id="content" class="content">
+            <h1>Audemars Piguet</h1>
+            <p>One Of Most Expensive and Luxury Wacth in The World</p>
+            <a href="" class="btn">Explore More</a>
+            <img src="5.png" alt="" class="feature">
+        </div>
+        <!-- <div class="social">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+        </div> -->
     </div>
-    <div class="container">
-      <input type="text" name="answer" id="output" />
-      <button onclick="Clear()">AC</button>
-      <button onclick="Del()">DEL</button>
-      <button onclick="display('%')">%</button>
-      <button onclick="display('/')">/</button>
-      <button onclick="display('7')">7</button>
-      <button onclick="display('8')">8</button>
-      <button onclick="display('9')">9</button>
-      <button onclick="display('*')">*</button>
-      <button onclick="display('4')">4</button>
-      <button onclick="display('5')">5</button>
-      <button onclick="display('6')">6</button>
-      <button onclick="display('-')">-</button>
-      <button onclick="display('1')">1</button>
-      <button onclick="display('2')">2</button>
-      <button onclick="display('3')">3</button>
-      <button onclick="display('+')">+</button>
-      <button onclick="display('.')">.</button>
-      <button onclick="display('0')">0</button>
-      <button onclick="Calculate()">=</button>
+    <!--Card Container-->
+    <div class="container2">
+        <h1>Our New Lineups</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="7.png" width="200" height="300" alt="">
+                    <h3 style="margin-top: 70px;">Audemars Piguet Series 9</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+                    <a href="" class="buy">Buy Now</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="10.png" width="300" height="350" alt="">
+                    <h3>Audemars Piguet Series 9</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+                    <a href="" class="buy">Buy Now</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="8.png" width="250" height="350" alt="">
+                    <h3>Audemars Piguet Series 9</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+                    <a href="" class="buy">Buy Now</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="app.js"></script>
-  </body>
+    <!--Form Contact-->
+    <div id="contact" class="container3">
+        <h1>Contact Us</h1>
+        <div class="wrap">
+            <form action="">
+                <label for="Name">Name</label>
+                <input type="text" name="nama">
+                <br>
+                <label for="Name">Email</label>
+                <input type="email" name="mail">
+                <br>
+                <label for="address">Message</label>
+                <input type="text">
+                <br>
+                <a href="" class="kirim">Kirim</a>
+            </form>
+        </div>
+        <footer>
+            <h3>Created By Lovely La...</h3>
+        </footer>
+    </div>
+</body>
 </html>
