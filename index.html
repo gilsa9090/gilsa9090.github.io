@@ -1,110 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .container3 {
-    background-image: url("3.jpg");
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    box-sizing: border-box;
-    position: relative;
-    align-items: center;
-}
+      .container3 {
+        background-image: url("3.jpg");
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        box-sizing: border-box;
+        position: relative;
+        align-items: center;
+      }
 
-.container3 h1 {
-    color: antiquewhite;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
+      .container3 h1 {
+        color: antiquewhite;
+        text-align: center;
+        margin-bottom: 50px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" id="home">
-        <!--NAVBAR-->
-        <div class="navbar">
-            <img src="logo.png" style="cursor: pointer;" width="150" height="80" alt="">
-            <nav>
-                <ul>
-                    <a href="#home"><li>Home</li></a>
-                    <a href="#content"><li>Offers</li></a>
-                    <a href="#contact"><li>Contact Us</li></a>
-                </ul>
-            </nav>
-        </div>
-        <!--Content-->
-        <div id="content" class="content">
-            <h1>Audemars Piguet</h1>
-            <p>One Of Most Expensive and Luxury Wacth in The World</p>
-            <a href="" class="btn">Explore More</a>
-            <img src="5.png" alt="" class="feature">
-        </div>
-        <!-- <div class="social">
+      <!--NAVBAR-->
+      <div class="navbar">
+        <img src="logo.png" style="cursor: pointer" width="150" height="80" alt="" />
+        <nav>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#content"><li>Offers</li></a>
+            <a href="#contact"><li>Contact Us</li></a>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Content-->
+      <div id="content" class="content">
+        <h1>Audemars Piguet</h1>
+        <p>One Of Most Expensive and Luxury Wacth in The World</p>
+        <a href="" class="btn">Explore More</a>
+        <img src="5.png" alt="" class="feature" />
+      </div>
+      <!-- <div class="social">
                 <a href="">Facebook</a>
                 <a href="">Instagram</a>
                 <a href="">Twitter</a>
         </div> -->
     </div>
+
+    <!--Slidebar-->
+    <nav class="slidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="sidebar.png" alt="" />
+          </span>
+
+          <div class="text header-text">
+            <span class="name">Audemars Piguet</span>
+            <span class="tag">A Luxury Items</span>
+          </div>
+        </div>
+
+        <img src="arrow.png" alt="" class="toggle" onclick="close()" />
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="nav-link">
+              <a href="">
+                <img src="dashboard.png" class="dash" width="25" height="25" alt="" />
+                <span class="text nav-text" style="padding-bottom: 5px">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!--Card Container-->
     <div class="container2">
-        <h1>Our New Lineups</h1>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img src="7.png" width="200" height="300" alt="">
-                    <h3 style="margin-top: 70px;">Audemars Piguet Series 9</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
-                    <a href="" class="buy">Buy Now</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="10.png" width="300" height="350" alt="">
-                    <h3>Audemars Piguet Series 9</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
-                    <a href="" class="buy">Buy Now</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="8.png" width="250" height="350" alt="">
-                    <h3>Audemars Piguet Series 9</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
-                    <a href="" class="buy">Buy Now</a>
-                </div>
-            </div>
+      <h1>Our New Lineups</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="7.png" width="200" height="300" alt="" />
+            <h3 style="margin-top: 70px">Audemars Piguet Series 9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+            <a href="" class="buy">Buy Now</a>
+          </div>
         </div>
+        <div class="col">
+          <div class="card">
+            <img src="10.png" width="300" height="350" alt="" />
+            <h3>Audemars Piguet Series 9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+            <a href="" class="buy">Buy Now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="8.png" width="250" height="350" alt="" />
+            <h3>Audemars Piguet Series 9</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic quod corrupti aliquid ex delectus id doloremque quia fuga illo labore accusamus nobis rem explicabo repudiandae facilis quidem, exercitationem ipsa.</p>
+            <a href="" class="buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!--Form Contact-->
     <div id="contact" class="container3">
-        <h1>Contact Us</h1>
-        <div class="wrap">
-            <form action="" class="centre">
-                <label for="Name">Name</label>
-                <input type="text" name="nama">
-                <br>
-                <label for="Name">Email</label>
-                <input type="email" name="mail">
-                <br>
-                <label for="address">Message</label>
-                <input type="text">
-                <br>
-                <a href="" class="kirim">Kirim</a>
-            </form>
-        </div>
-        <footer>
-            <h3>Created By Lovely La...</h3>
-        </footer>
+      <h1>Contact Us</h1>
+      <div class="wrap">
+        <form action="" class="centre">
+          <label for="Name">Name</label>
+          <input type="text" name="nama" />
+          <br />
+          <label for="Name">Email</label>
+          <input type="email" name="mail" />
+          <br />
+          <label for="address">Message</label>
+          <input type="text" />
+          <br />
+          <a href="" class="kirim">Kirim</a>
+        </form>
+      </div>
+      <footer>
+        <h3>Created By Lovely La...</h3>
+      </footer>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
